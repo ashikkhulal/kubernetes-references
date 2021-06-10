@@ -1,0 +1,34 @@
+minikube start --driver=docker
+minikube start --driver=hyperv
+kubectl get nodes
+minikube status
+kubectl version
+kubectl get pods / kubectl get pod
+kubectl get services
+kubectl create -h
+kubectl create deployment <name> --image=<image name>
+kubectl get replicaset
+kubectl edit deployment <deployment name>
+kubectl logs <pod name>
+kubectl create deployment mongo-depl --image=mongo
+kubectl exec -it <pod name> bash
+kubectl get deployment
+kubectl delete deployment <deployment name>
+kubectl apply -f <file name>
+kubectl describe service
+kubectl get pod -o wide
+kubectl get deployment <deployment name> -o yaml
+kubectl get deployment <deployment name> -o yaml > <filename.yaml>
+kubectl get all
+kubectl get secret
+minikube --help
+minikube service
+minikube service list
+minikube update-check
+kubectl get namespaces
+kubectl cluster-info
+kubectl create namespace <name>
+gsudo choco install kubens
+kubens <my-namespace-name>
+kubens
+minikube addons enable ingress

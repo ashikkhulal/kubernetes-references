@@ -1,0 +1,13 @@
+apiVersion: networking.k8s.io/v1beta1
+kind: Ingress
+metadata:
+  name: my-site-ingress
+  namespace: my-namespace
+spec:
+  rules:
+  - host: dashboard.com
+    http:
+      paths:
+      - backend:
+          serviceName: my-site-nginx-service
+          servicePort: 80
